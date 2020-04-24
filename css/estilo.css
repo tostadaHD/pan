@@ -27,27 +27,33 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
 .navbar .navbar-brand {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
 }
 
-.navbar a{
+.navbar a {
     color: rgba(30, 139, 195, 1);
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: rgba(0, 0, 0, 0.7);
 }
 
-.nav-pills .nav-link.active{
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: rgba(30, 139, 195, 1);
 }
+
+.dropdown-item:active {
+    background-color: rgba(30, 139, 195, 1);
+}
+
 /* Custom page footer */
 .footer {
     padding-top: 19px;
@@ -68,7 +74,8 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
     .container {
-        max-width: 830px; /* Aumenté el tamaño para adaptar el contenedor al menú */
+        max-width: 830px;
+        /* Aumenté el tamaño para adaptar el contenedor al menú */
     }
 }
 
@@ -88,11 +95,14 @@ body {
     background-size: cover;
 }
 
+.jumbotron p.lead {
+    text-shadow: 0 0 3px #ffffff;
+}
+
 .jumbotron .btn {
     padding: 14px 24px;
     font-size: 21px;
 }
-
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -113,4 +123,16 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+}
+
+.card {
+    width: 18rem;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.card-deck {
+    padding-bottom: 25px;
 }

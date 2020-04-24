@@ -23,7 +23,7 @@
     <!-- Web Font Loader (hace más eficaz la descarga de Google Fonts) -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-    WebFont.load({
+        WebFont.load({
         google: {
             families: ['Open Sans', 'Raleway']
         }
@@ -45,53 +45,101 @@
                 </a>
                 <ul class="nav nav-pills pull-right">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-network-wired"></i> Acerca de...</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#"> Tostadas</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-network-wired"></i> Acerca de...</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="fas fa-question"></i> ¿Qué es Tostada HD?</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-users"></i> Participantes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="tostadas.html"> Tostadas</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-box-open"></i> Repositorio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-comments"></i> Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-comments"></i> Contribuir</a></li>
                 </ul>
             </nav>
         </div>
+        <main role="main" class="blockquote text-center">
+            <h1>Tostadas</h1>
+            <p>Las tostadas han sido las reuniones que hemos realizado de manera virtual en las cuales discutimos en torno a una pregunta y un posible camino para plantear su resolución. Cada reunión está coordinada por dos personas y se deja constancia de lo tratado en una bitácora virtual.</p>
+        </main>
         <div class="container">
-            <h1><i class="fas fa-bread-slice"></i> Tostadas</h1>
-            <p class="tostadas">Texto de introducción</p>
-        </div>
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="imagenes/tostada_1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">La primera #TostadaHD: ¿Qué son y no son las HD? ¿Cuáles son los pasos para hacer una "tostada" en HD?<br />
-                                    <b>Coordinado por:</b> <i>Tata Méndez [Col] y Silvia Gutiérrez [Mex] </i>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group btn-group-toggle">
-                                        <button type="button" class="btn btn-sm btn-outline-success"><a href="https://etherpad.wikimedia.org/p/tostadaHD" target="_blank">Etherpad</a></button>
-                                        <button type="button" class="btn btn-sm btn-outline-success"><a href="https://witeboard.com/56b6c5a0-5c18-11e9-b353-ab9d9e1c39a4" target="_blank">Witeboard</a></button>
-                                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Reseña</button>
-                                    </div>
+            <div class="card-deck">
+                <div class="card text-center">
+                    <img class="card-img-top" src="imagenes/tostada_4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3>Educación virtual, cultura y humanidades digitales</h3>
+                            <p></p>
+                            <p><b>Coordinado por:</b> <i>Omar Rincón [Col] y Catalina Hoyos G. [Col] </i>
+                            </p>
+                            <div class="card-footer">
+                                <div class="btn-group btn-group-toggle">
+                                    <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Por definir"><a href="#">Enlace a la reunión</a></button>
                                 </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card text-center">
+                    <img class="card-img-top" src="imagenes/tostada_3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3>Metodologías en educación virtual</h3>
+                            <p>Continuamos con la tostada que empezó a cocinarse en la anterior sesión. Esta vez para abordar la pregunta ¿Cuáles metodologías de la educación virtual están utilizando los humanistas en tiempos de virus?</p>
+                            <p><b>Coordinado por:</b> <i>María José Afanador [Col] y Gimena del Rio Riande [Arg] </i>
+                            </p>
+                            <div class="card-footer">
+                                <div class="btn-group btn-group-toggle">
+                                    <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Notas de la reunión"><a href="https://etherpad.wikimedia.org/p/TostadaHD_-_Educaci%C3%B3n_virtual" target="_blank">Etherpad</a></button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="imagenes/tostada_2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>Educación virtual desde las HD</h3>
+                        <p class="card-text"><br />Debido a la coyuntura generada por la pandemia de Covid-19, discutimos la posición de los involucrados en las DH respecto a la urgencia por reiniciar las actividades académicas por medios virtuales.</p>
+                        <p><b>Coordinado por:</b> <i>Tata Méndez [Col] y Ernesto Priani [Mex] </i>
+                        </p>
+                        <div class="card-footer">
+                            <div class="btn-group btn-group-toggle">
+                                <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Notas de la reunión"><a href="https://etherpad.wikimedia.org/p/TostadaHD_-_Educaci%C3%B3n_virtual/timeslider#4057" target="_blank">Etherpad</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="imagenes/tostada_1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>La primera #TostadaHD</h3>
+                        <p class="card-text">¿Qué son y no son las HD? ¿Cuáles son los pasos para hacer una "tostada" en HD?</p>
+                        <p><b>Coordinado por:</b> <i>Tata Méndez [Col] y Silvia Gutiérrez [Mex] </i>
+                        </p>
+                        <div class="card-footer">
+                            <div class="btn-group btn-group-toggle">
+                                <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Notas de la reunión"><a href="https://etherpad.wikimedia.org/p/tostadaHD" target="_blank">Etherpad</a></button>
+                                <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Dibujo colectivo">
+                                    <a href="https://witeboard.com/56b6c5a0-5c18-11e9-b353-ab9d9e1c39a4" target="_blank">
+                                        Witeboard</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <p>El contenido de este sitio está publicado bajo una licencia <i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> CC-BY 4.0</a>.</p>
-        </footer>
+    <footer class="footer">
+        <p>El contenido de este sitio está publicado bajo una licencia <i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> CC-BY 4.0</a>.</p>
+    </footer>
     </div>
-
     <!-- Scripts -->
     <!-- Tooltips -->
     <script>
-        $(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     </script>
-
 </body>
 
 </html>
