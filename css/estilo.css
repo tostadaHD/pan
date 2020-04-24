@@ -22,28 +22,37 @@ body {
 /* Custom page header */
 .header {
     padding-bottom: 20px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-/* Evita el FOUT */
-.wf-loading .header h3 {
-    visibility: hidden;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    
 }
 
+.navbar .navbar-brand {
+    color: rgba(0,0,0,0.7);
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+.navbar a{
+    color: rgba(30, 139, 195, 1);
+}
+
+.navbar a:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-pills .nav-link.active{
+    background-color: rgba(30, 139, 195, 1);
+}
 /* Custom page footer */
 .footer {
     padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+    color: rgba(119, 119, 119, 1);
+    border-top: 1px solid rgba(229, 229, 229, 1);
 }
 
 .footer a {
@@ -59,7 +68,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 830px; /* Aumenté el tamaño para adaptar el contenedor al menú */
     }
 }
 
@@ -71,7 +80,7 @@ body {
 
 .jumbotron {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
     background-color: white;
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../imagenes/img_1.jpg");
     background-repeat: no-repeat;
