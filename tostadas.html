@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Espacio colaborativo para la discusión de problemas prácticos de las Humanidades Digitales">
+    <meta name="author" content="TostadaHD">
+    <link rel="icon" href="imagenes/favicon.ico">
+    <title>#TostadaHD</title>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Estilo del sitio -->
+    <link href="css/estilo.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Web Font Loader (hace más eficaz la descarga de Google Fonts) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        google: {
+            families: ['Open Sans', 'Raleway']
+        }
+    });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="index.html"><i class="fas fa-terminal"></i> Inicio</a></li>
+                    <li role="presentation"><a href="#"><i class="fas fa-network-wired"></i> Acerca de...</a></li>
+                    <li role="presentation" class="active"><a href="tostadas.html"> Tostadas</a></li>
+                    <li role="presentation"><a href="tostadas.html"><i class="fas fa-archive"></i> Repositorio</a></li>
+                    <li role="presentation"><a href="#"><i class="fas fa-comments"></i> Contribuir</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">#TostadaHD</h3>
+        </div>
+        <div class="container">
+            <h1><i class="fas fa-bread-slice"></i> Tostadas</h1>
+            <p class="tostadas">Texto de introducción</p>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" src="imagenes/tostada_1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">La primera #TostadaHD: ¿Qué son y no son las HD? ¿Cuáles son los pasos para hacer una "tostada" en HD?<br />
+                                    <b>Coordinado por:</b> <i>Tata Méndez [Col] y Silvia Gutiérrez [Mex] </i>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group btn-group-toggle">
+                                        <button type="button" class="btn btn-sm btn-outline-success"><a href="https://etherpad.wikimedia.org/p/tostadaHD" target="_blank">Etherpad</a></button>
+                                        <button type="button" class="btn btn-sm btn-outline-success"><a href="https://witeboard.com/56b6c5a0-5c18-11e9-b353-ab9d9e1c39a4" target="_blank">Witeboard</a></button>
+                                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Reseña</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>El contenido de este sitio está publicado bajo una licencia <i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> CC-BY 4.0</a>.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Tooltips -->
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
