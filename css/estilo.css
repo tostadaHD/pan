@@ -136,3 +136,28 @@ body {
 .card-deck {
     padding-bottom: 25px;
 }
+
+.social a {
+    color: rgba(30, 139, 195, 1);
+}
+
+.descripcion {
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+.prox-tostadas {
+    padding-left: 1em;
+}
+
+.prox-tostadas h4 {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+.tostadas-widget {
+    padding-top: 1.5em;
+    height: 300px;
+
+}
