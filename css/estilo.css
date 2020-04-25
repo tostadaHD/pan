@@ -12,6 +12,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+     color: rgba(30, 139, 195, 1);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
@@ -160,4 +167,29 @@ body {
     padding-top: 1.5em;
     height: 300px;
 
+}
+
+.btn-outline-info:hover a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tostada-entrada {
+    padding-bottom: 1em;
+}
+
+.tostada-entrada img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+}
+
+.tostada-entrada h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.tostada-footer {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
