@@ -38,6 +38,10 @@ a:hover,
     padding-left: 15px;
 }
 
+.footer p {
+    font-size: 0.9em;
+}
+
 /* Custom page header */
 .header {
     padding-bottom: 20px;
@@ -175,6 +179,12 @@ a:hover,
     width: 50%;
     height: auto;
     margin-left: 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bloquetext img:hover {
+    opacity: 0.7;
 }
 
 .tostadas-widget {
@@ -208,3 +218,16 @@ a:hover,
     border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
 
+.perfiles {
+    width: 18rem;
+}
+
+.perfiles img {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Estilo del sitio -->
     <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -49,12 +50,12 @@
                         <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Acerca de...</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item active" href="#">¿Qué es Tostada HD?</a>
-                            <a class="dropdown-item" href="#"><i class="fas fa-users"></i> Participantes</a>
+                            <a class="dropdown-item" href="participantes.html"><i class="fas fa-users"></i> Participantes</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="tostadas.html"><i class="fas fa-bread-slice"></i> Tostadas</a></li>
                     <li class="nav-item"><a class="nav-link" href="repo.html"><i class="fas fa-box-open"></i> Repositorio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-comments"></i> Contribuir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contribuye.html"><i class="fas fa-comments"></i> Contribuir</a></li>
                 </ul>
             </nav>
         </div>
@@ -62,9 +63,8 @@
             <div class="bloquetext">
                 <h1 class="text-center">¿Qué es la Tostada HD?</h1>
                 <p><a href="https://www.tomwujec.com/" target="_blank">Tom Wujec</a> (conferencista, desarrollador de software e innovador) diseñó un ejercicio para favorecer la solución de problemas en el cual le pide a los participantes que en tres minutos dibujen un diagrama que indique cómo hacer una <a href="https://www.drawtoast.com" target="_blank"> tostada</a>. Aunque en principio parece una actividad sencilla, <a href="https://www.drawtoast.com/gallery.html#.XqSrIGhKjIU" target="_blank"> prácticamente ningún esquema se parece al otro</a>. Algunos pueden ser complejos diagramas de flujo con muchos pasos, otros simples esquemas de tres pasos, unos pueden centrarse en la máquina, algunos en los insumos; las opciones son muchas. Siguiendo este ejercicio mental, es posible extrapolarlo a problemas y proyectos específicos en los que las empresas tienen dificultades para resolverlos de manera "tradicional".</p>
-                <img src="imagenes/ques_img.jpg" class="rounded float-right">
+                <img id="myImg" alt="La tostada dibujada" src="imagenes/ques_img.jpg" class="rounded float-right">
                 <p>La Tostada HD se plantea como un ejercicio de creatividad colectiva. Antes que proponer respuestas y soluciones, las reuniones en la tostadaHD se plantean como un espacio de catarsis e innovación. </p>
-                
                 <p>La metodología planteada es similar a la de una "<a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">desconferencia</a>" en la que dos participantes moderan la discusión basada en una pregunta compleja relacionada con el amplio ámbito de las <a href="https://www.revista.unam.mx/vol.12/num7/art68/" target="_blank"> humanidades digitales</a> (p. ej. ¿Cómo se hace un proyecto en Humanidades Digitales?). La discusión se desarrolla de manera orgánica por cerca de hora y media, tras la cual, lejos de definir "una" estrategia a seguir, se rescatan los aportes que pueden apoyar de una u otra manera proyectos particulares.</p>
                 <p>Las ideas centrales de cada aporte son incluidas en una bitácora colectiva y, en ciertos ejercicios, en un tablero de dibujo virtual que puede ser consultado posteriormente.</p>
             </div>
@@ -77,6 +77,14 @@
             <p>El contenido de este sitio está publicado bajo una licencia <i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> CC-BY 4.0</a>.</p>
         </footer>
     </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imagen1">
+        <div id="caption"></div>
+    </div>
+    <!-- Fin del modal -->
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

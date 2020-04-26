@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Estilo del sitio -->
     <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -46,26 +47,48 @@
                 <ul class="nav nav-pills pull-right">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-network-wired"></i> Acerca de...</a>
+                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Acerca de...</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="ques-tostadaHD.html"><i class="fas fa-question"></i> ¿Qué es Tostada HD?</a>
-                            <a class="dropdown-item" href="participantes.html"><i class="fas fa-users"></i> Participantes</a>
+                            <a class="dropdown-item active" href="#">Participantes</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="tostadas.html"><i class="fas fa-bread-slice"></i> Tostadas</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#"> Repositorio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="repo.html"><i class="fas fa-box-open"></i> Repositorio</a></li>
                     <li class="nav-item"><a class="nav-link" href="contribuye.html"><i class="fas fa-comments"></i> Contribuir</a></li>
                 </ul>
             </nav>
         </div>
         <main role="main">
-            <div class="blockquote text-center">
-            <h1>Repositorio</h1>
-            <p>Para facilitar la conservación de las bitácoras y las imágenes, creamos un repositorio de tostadas. Los archivos son guardados en dos formatos: HTML y WARC. El HTML es guardado `headedless` en tanto el formato WARC salva los `headers` y otros metadatos que no son guardados en el HTML plano. <a href="http://fileformats.archiveteam.org/wiki/WARC" target="_blank">WARC</a>, un formato de archivo diseñado por la <a href="http://netpreserve.org/" target="_blank">IIPC</a> y usado por el <a href="https://www.archiveteam.org/index.php?title=The_WARC_Ecosystem" target="_blank">Internet Archive</a> específicamente para la preservación de información disponible en la Web. Para más información sobre este formato puede consultarse la <a href="https://iipc.github.io/warc-specifications/guidelines/warc-implementation-guidelines/" target="_blank">guía de implementación</a>. La información de los Etherpad es muy compleja de obtener por medio de técnicas como el Web crawler o Web scraping, por lo que estamos experimentando con estrategias para recuperar, almacenar y conservar la información disponible en los Etherpad.</p> 
-        </div>
-        <div class="enlace-repo row justify-content-center">
-            <button type="button" class="btn btn-outline-info"><a href="https://github.com/tostadaHD/repo"> Ir al repositorio <i class="fab fa-github"></i></a></button>
-        </div>
+            <h2 class="text-center">Asociaciones</h2>
+            <div class="row justify-content-center">
+                <div class="card-deck">
+                    <div class="card perfiles">
+                        <img src="https://pbs.twimg.com/profile_images/978038623928029185/8LW18IGd_400x400.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Red Colombiana de Humanidades digitales</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://twitter.com/intent/tweet?screen_name=ReHDi_Co&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ReHDi_Co</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a href="https://twitter.com/ReHDi_Co?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ReHDi_Co</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <div class="card perfiles">
+                        <img src="https://pbs.twimg.com/profile_images/763945841765654528/mkjYwD9l_400x400.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Red HD</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://twitter.com/intent/tweet?screen_name=Red_HD&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @Red_HD</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a href="https://twitter.com/Red_HD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Red_HD</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <p>El contenido de este sitio está publicado bajo una licencia <i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> CC-BY 4.0</a>.</p>
