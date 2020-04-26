@@ -12,13 +12,25 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
-     color: rgba(30, 139, 195, 1);
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway', sans-serif;
 }
 
-a:hover {
+a,
+.navbar a,
+.social a {
+    color: rgba(30, 139, 195, 1);
+}
+
+a:hover,
+.navbar a:hover {
     color: rgba(0, 0, 0, 0.7);
 }
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
@@ -44,19 +56,8 @@ a:hover {
     font-size: 1.5em;
 }
 
-.navbar a {
-    color: rgba(30, 139, 195, 1);
-}
-
-.navbar a:hover {
-    color: rgba(0, 0, 0, 0.7);
-}
-
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: rgba(30, 139, 195, 1);
-}
-
+.nav-pills .show>.nav-link,
 .dropdown-item:active {
     background-color: rgba(30, 139, 195, 1);
 }
@@ -82,7 +83,8 @@ a:hover {
 @media (min-width: 768px) {
     .container {
         max-width: 830px;
-        /* Aumenté el tamaño para adaptar el contenedor al menú */
+        /* Aumenté el tamaño para adaptar el contenedor al menú. Nuevos elementos requerirán aumentar 
+        el tamaño del contenedor */
     }
 }
 
@@ -144,10 +146,6 @@ a:hover {
     padding-bottom: 25px;
 }
 
-.social a {
-    color: rgba(30, 139, 195, 1);
-}
-
 .descripcion {
     padding-bottom: 1em;
     padding-right: 1em;
@@ -163,6 +161,22 @@ a:hover {
     padding-bottom: 0.7em;
 }
 
+.bloquetext {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.ques-footer,
+.bloquetext h1 {
+    padding-bottom: 0.5em;
+}
+
+.bloquetext img {
+    width: 50%;
+    height: auto;
+    margin-left: 0.5em;
+}
+
 .tostadas-widget {
     padding-top: 1.5em;
     height: 300px;
@@ -174,6 +188,7 @@ a:hover {
     text-decoration: none;
 }
 
+.enlace-repo,
 .tostada-entrada {
     padding-bottom: 1em;
 }
@@ -182,14 +197,14 @@ a:hover {
     width: 50px;
     height: 50px;
     float: left;
-    padding: 5px;
+    margin-right: 5px;
 }
 
 .tostada-entrada h5 {
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
 .tostada-footer {
     border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
+

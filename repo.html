@@ -46,32 +46,26 @@
                 <ul class="nav nav-pills pull-right">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Acerca de...</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-network-wired"></i> Acerca de...</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item active" href="#">¿Qué es Tostada HD?</a>
+                            <a class="dropdown-item" href="ques-tostadaHD.html"><i class="fas fa-question"></i> ¿Qué es Tostada HD?</a>
                             <a class="dropdown-item" href="#"><i class="fas fa-users"></i> Participantes</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="tostadas.html"><i class="fas fa-bread-slice"></i> Tostadas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="repo.html"><i class="fas fa-box-open"></i> Repositorio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#"> Repositorio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-comments"></i> Contribuir</a></li>
                 </ul>
             </nav>
         </div>
         <main role="main">
-            <div class="bloquetext">
-                <h1 class="text-center">¿Qué es la Tostada HD?</h1>
-                <p><a href="https://www.tomwujec.com/" target="_blank">Tom Wujec</a> (conferencista, desarrollador de software e innovador) diseñó un ejercicio para favorecer la solución de problemas en el cual le pide a los participantes que en tres minutos dibujen un diagrama que indique cómo hacer una <a href="https://www.drawtoast.com" target="_blank"> tostada</a>. Aunque en principio parece una actividad sencilla, <a href="https://www.drawtoast.com/gallery.html#.XqSrIGhKjIU" target="_blank"> prácticamente ningún esquema se parece al otro</a>. Algunos pueden ser complejos diagramas de flujo con muchos pasos, otros simples esquemas de tres pasos, unos pueden centrarse en la máquina, algunos en los insumos; las opciones son muchas. Siguiendo este ejercicio mental, es posible extrapolarlo a problemas y proyectos específicos en los que las empresas tienen dificultades para resolverlos de manera "tradicional".</p>
-                <img src="imagenes/ques_img.jpg" class="rounded float-right">
-                <p>La Tostada HD se plantea como un ejercicio de creatividad colectiva. Antes que proponer respuestas y soluciones, las reuniones en la tostadaHD se plantean como un espacio de catarsis e innovación. </p>
-                
-                <p>La metodología planteada es similar a la de una "<a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">desconferencia</a>" en la que dos participantes moderan la discusión basada en una pregunta compleja relacionada con el amplio ámbito de las <a href="https://www.revista.unam.mx/vol.12/num7/art68/" target="_blank"> humanidades digitales</a> (p. ej. ¿Cómo se hace un proyecto en Humanidades Digitales?). La discusión se desarrolla de manera orgánica por cerca de hora y media, tras la cual, lejos de definir "una" estrategia a seguir, se rescatan los aportes que pueden apoyar de una u otra manera proyectos particulares.</p>
-                <p>Las ideas centrales de cada aporte son incluidas en una bitácora colectiva y, en ciertos ejercicios, en un tablero de dibujo virtual que puede ser consultado posteriormente.</p>
-            </div>
-            <div class="ques-footer">
-                <a href="tostadas.html">Ver tostadas anteriores</a><br />
-                <a href="repo.html">Consultar repositorio de tostadas</a>
-            </div>
+            <div class="blockquote text-center">
+            <h1>Repositorio</h1>
+            <p>Para facilitar la conservación de las bitácoras y las imágenes, creamos un repositorio de tostadas. Los archivos son guardados en dos formatos: HTML y WARC. El HTML es guardado `headedless` en tanto el formato WARC salva los `headers` y otros metadatos que no son guardados en el HTML plano. <a href="http://fileformats.archiveteam.org/wiki/WARC" target="_blank">WARC</a>, un formato de archivo diseñado por la <a href="http://netpreserve.org/" target="_blank">IIPC</a> y usado por el <a href="https://www.archiveteam.org/index.php?title=The_WARC_Ecosystem" target="_blank">Internet Archive</a> específicamente para la preservación de información disponible en la Web. Para más información sobre este formato puede consultarse la <a href="https://iipc.github.io/warc-specifications/guidelines/warc-implementation-guidelines/" target="_blank">guía de implementación</a>. La información de los Etherpad es muy compleja de obtener por medio de técnicas como el Web crawler o Web scraping, por lo que estamos experimentando con estrategias para recuperar, almacenar y conservar la información disponible en los Etherpad.</p> 
+        </div>
+        <div class="enlace-repo row justify-content-center">
+            <button type="button" class="btn btn-outline-info"><a href="https://github.com/tostadaHD/repo"> Ir al repositorio <i class="fab fa-github"></i></a></button>
+        </div>
         </main>
         <footer class="footer">
             <p>El contenido de este sitio está publicado bajo una licencia <i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> CC-BY 4.0</a>.</p>
