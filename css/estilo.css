@@ -96,25 +96,28 @@ a:hover,
     margin: 30px 0;
 }
 
-/* Mensaje principal */
-
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid rgba(229, 229, 229, 1);
-    background-color: white;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../imagenes/img_1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.imginicio {
+    padding-top: 1em;
+    padding-bottom: 0.2em;
 }
 
-.jumbotron p.lead {
-    text-shadow: 0 0 3px #ffffff;
+.imginicio img {
+    justify-content: center;
+    height: 300px;
+    width: auto;
 }
 
-.jumbotron .btn {
-    padding: 14px 24px;
-    font-size: 21px;
+.social {
+    padding-bottom: 1em;
+    padding-top: 0.2em;
+}
+
+.social a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.social a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive: Portrait tablets and up */
@@ -148,6 +151,16 @@ a:hover,
 
 .card-deck {
     padding-bottom: 25px;
+}
+
+.card-body h5 {
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.card-footer {
+    text-align: center;
 }
 
 .descripcion {
