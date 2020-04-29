@@ -31,7 +31,6 @@ a:hover,
     color: rgba(0, 0, 0, 0.7);
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
     padding-right: 15px;
@@ -133,11 +132,6 @@ a:hover,
     /* Space out the masthead */
     .header {
         margin-bottom: 30px;
-    }
-
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
     }
 }
 
